@@ -1,24 +1,31 @@
 body {
-  padding: 30px;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0px;
   color: #293264;
   background-color: #F5F7FB;
   background-image: url("images/image.svg"), url("images/image2.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left ;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .app {
   max-width: 600px;
   margin: 0 auto;
 }
 
+.answers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .answer {
-  margin-right: 12px;
+  margin: 4px;
   padding: 5px;
   border: 0.8px solid #4D5B9E;
   border-radius: 8px;
@@ -33,6 +40,7 @@ hr {
 .action-btn {
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #4D5B9E;
   border-radius: 15px;
   border: none;
@@ -40,6 +48,10 @@ hr {
   padding: 12px 28px;
   font-size: 20px;
   cursor: pointer;
+}
+
+h1{
+  margin-top: 20px;
 }
 
 h2 {
@@ -50,10 +62,6 @@ h2 {
 
 h4 {
   margin-top: 0;
-}
-
-.answers-wrapper {
-  display: flex;
 }
 
 .intro {
